@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctors</title>
+  <style>
+   /* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f9;
+  padding: 20px;
+}
+
+/* Page Title */
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+/* Container for all doctors */
+.doctor-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Individual doctor card */
+.d {
+  background-color: white;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  width: 220px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Doctor card hover effect */
+.d:hover {
+  border-color: #3498db;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+/* Doctor profile picture */
+.dp {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid #ecf0f1;
+}
+
+/* Doctor name */
+.d h3 {
+  color: #2c3e50;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+/* Doctor details (specialty and room) */
+.d p {
+  color: #7f8c8d;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+/* First paragraph (specialty) styling */
+.d p:first-of-type {
+  color: #3498db;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+/* Room number styling */
+.d p:last-of-type {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.hospital-info {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #f9fbfc;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.info-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.info-item {
+  flex: 1 1 calc(50% - 20px); /* 2 columns */
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  
+}
+
+.info-item:hover {
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.info-item h4 {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.info-item p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+
+
+  </style>
+</head>
+<body>
+  <h1>Our Doctors</h1>
+  <div class="doctor-container">
+    <div class="d">
+      <img src="./Doctors/d1.jpg" class="dp">
+      <h3>Dr Viraj</h3>
+      <p>Specialist in Cardiology</p>
+      <p>Room No : 302</p>
+    </div>
+    <div class="d">
+      <img src="./Doctors/d2.jpeg" class="dp">
+      <h3>Dr Varsha</h3>
+      <p>Specialist in Neurology</p>
+      <p>Room No : 305</p>
+    </div>
+    <div class="d">
+      <img src="./Doctors/d3.jpeg" class="dp">
+      <h3>Dr Justin</h3>
+      <p>Specialist in Orthopedics</p>
+      <p>Room No : 210</p>
+    </div>
+    <div class="d">
+      <img src="./Doctors/d4.jpg" class="dp">
+      <h3>Dr Pluto</h3>
+      <p>Specialist in Pediatrics</p>
+      <p>Room No : 112</p>
+    </div>
+    <div class="d">
+      <img src="./Doctors/d5.jpg" class="dp">
+      <h3>Dr Yashna</h3>
+      <p>Specialist in Dermatology</p>
+      <p>Room No : 415</p>
+    </div>
+  </div>
+
+  <div class="hospital-info">
+      <h2 style="text-align: center; color: #2c3e50; margin-bottom: 30px;">Why Choose Our Doctors?</h2>
+      <div class="info-grid">
+        <div class="info-item">
+          <h4>🎓 Highly Qualified</h4>
+          <p>All our doctors are board-certified with advanced degrees from prestigious medical institutions</p>
+        </div>
+        <div class="info-item">
+          <h4>💼 Experienced</h4>
+          <p>Average 15+ years of clinical experience in their respective specializations</p>
+        </div>
+        <div class="info-item">
+          <h4>🏆 Award-Winning</h4>
+          <p>Many of our doctors have received national and international recognition for their work</p>
+        </div>
+        <div class="info-item">
+          <h4>🤝 Patient-Centered</h4>
+          <p>Committed to providing personalized care with compassion and understanding</p>
+        </div>
+      </div>
+    </div>
+
+</body>
+</html>
